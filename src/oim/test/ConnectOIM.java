@@ -8,7 +8,7 @@ import oracle.iam.platform.OIMClient;
 
 public class ConnectOIM {
 
-	private static OIMClient oimClient;
+	static OIMClient oimClient;
 	
 	public static void main(String[] args) throws LoginException {
 		System.out.println("Creating client....");
