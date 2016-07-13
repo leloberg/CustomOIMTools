@@ -19,6 +19,7 @@ public class FindApplicationInstance {
 			System.out.println("Looking for Application Instance with name "+applicationInstanceName);
 			appInst = appInstServ.findApplicationInstanceByName(applicationInstanceName);
 			appInstKey = appInst.getApplicationInstanceName();
+			System.out.println("AppInstKey: "+appInst.getApplicationInstanceKey());
 			System.out.println("Display Name: "+appInst.getDisplayName());
 			System.out.println("Description: "+appInst.getDescription());
 			
@@ -41,7 +42,7 @@ public class FindApplicationInstance {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String applicationInstanceName = "ActiveDirectory";
+		String applicationInstanceName = "testAppInst1";
 		getAppInst(applicationInstanceName);
 		
 	}
